@@ -23,7 +23,7 @@ while [ $level -le 10 ]; do
   printf "\033[2J\033[H"
 
   printf "答えを入力: "
-  read -r answer
+  read answer
 
   if [ "$answer" = "$number" ]; then
     echo "正解！"
