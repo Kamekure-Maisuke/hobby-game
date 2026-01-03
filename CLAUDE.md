@@ -14,5 +14,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 .github
   workflows
     ci.yml
-main.sh
+XXXX.sh
 ```
+
+## 内容
+- hobby gameのスクリプトを保存。
+- shellscriptで記述。
+- github actionでshellcheckとbats coreを動かしている。
