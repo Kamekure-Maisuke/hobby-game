@@ -11,5 +11,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## プロジェクト階層
 
 ```
+.github
+  workflows
+    ci.yml
 main.sh
 ```
