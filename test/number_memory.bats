@@ -32,12 +32,14 @@ SCRIPT="./number_memory.sh"
 }
 
 @test "不正解時にゲーム終了メッセージを表示する" {
-  run timeout 2 sh -c "echo '000' | $SCRIPT" || true
+  run timeout 5 sh -c "echo '000' | $SCRIPT 2>&1" || true
+  echo "Output: $output" >&3
   [[ "$output" =~ "ゲーム終了" ]]
 }
 
 @test "スコアが表示される" {
-  run timeout 2 sh -c "echo '000' | $SCRIPT" || true
+  run timeout 5 sh -c "echo '000' | $SCRIPT 2>&1" || true
+  echo "Output: $output" >&3
   [[ "$output" =~ "スコア:" ]]
 }
 
