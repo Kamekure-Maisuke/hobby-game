@@ -1,0 +1,30 @@
+v-bind:class の省略記法は？	:class	@class	#class	.class	1
+v-on:click の省略記法は？	:click	@click	#click	.click	2
+配列をループしてリストをレンダリングするディレクティブは？	v-loop	v-repeat	v-for	v-each	3
+フォーム入力要素と双方向バインディングするディレクティブは？	v-bind	v-model	v-sync	v-input	2
+要素を条件付きでレンダリングするディレクティブは？	v-show	v-if	v-when	v-display	2
+Composition APIでリアクティブな変数を作成する関数は？	ref()	reactive()	state()	watch()	1
+Composition APIで算出プロパティを定義する関数は？	computed()	calculate()	derive()	memo()	1
+コンポーネントがマウントされた時に実行されるComposition APIのフックは？	onCreated()	onMounted()	onReady()	onInit()	2
+v-if と v-show の違いは？	v-showは常にレンダリングされCSS切り替え	v-ifは常にレンダリングされCSS切り替え	違いはない	v-showの方が高速	1
+テンプレート内の要素への参照を取得する属性は？	id	key	ref	name	3
+v-forを使う時に必須とされる属性は？	id	key	ref	index	2
+v-for と v-if を同じ要素で使うベストプラクティスは？	常に併用する	v-ifを先に書く	避けるべき	v-forを先に書く	3
+script setupで使用するpropsの定義方法は？	defineProps()	props()	useProps()	createProps()	1
+script setupで使用するemitの定義方法は？	defineEmits()	emits()	useEmits()	createEmits()	1
+親コンポーネントに値を渡す時に使う関数は？	emit()	send()	dispatch()	trigger()	1
+深い階層のコンポーネント間でデータを共有する機能は？	provide/inject	context	global	share	1
+DOMの更新を待つために使う関数は？	nextTick()	waitDOM()	flushDOM()	updateDOM()	1
+watchとcomputedの使い分けで正しいのは？	副作用が必要ならwatch	常にwatchを使う	常にcomputedを使う	どちらでも同じ	1
+リアクティブなオブジェクトをpropsとして渡す時の注意点は？	toRefs()で分割する	そのまま渡す	JSON化する	複製する	1
+コンポーネントの状態を保持したまま切り替えるには？	<keep-alive>	<preserve>	<cache>	<maintain>	1
+別のDOM位置に要素をレンダリングする機能は？	<teleport>	<portal>	<transfer>	<move>	1
+イベント修飾子で「一度だけ実行」を指定するのは？	.once	.single	.one	.first	1
+イベント修飾子で「イベント伝播を止める」のは？	.stop	.prevent	.halt	.block	1
+フォーム送信のデフォルト動作を防ぐ修飾子は？	.stop	.prevent	.default	.halt	2
+複数のルート要素を持つコンポーネントで使う機能は？	Fragment	Multiple	Root	Template	1
+リアクティブな配列の要素を変更する正しい方法は？	arr[0] = 'new'	arr.value[0] = 'new'	どちらも正しい	配列は変更不可	2
+shallow refとrefの違いは？	shallowは浅い監視のみ	shallowは深い監視	違いはない	shallowは高速	1
+composablesの命名規則として推奨されるのは？	useXxx形式	getXxx形式	createXxx形式	makeXxx形式	1
+watchで即座に実行するオプションは？	immediate: true	instant: true	now: true	direct: true	1
+propsのバリデーションで型を指定する方法は？	type: String	kind: String	format: String	class: String	1
