@@ -28,3 +28,23 @@ shallow refとrefの違いは？	shallowは浅い監視のみ	shallowは深い�
 composablesの命名規則として推奨されるのは？	useXxx形式	getXxx形式	createXxx形式	makeXxx形式	1
 watchで即座に実行するオプションは？	immediate: true	instant: true	now: true	direct: true	1
 propsのバリデーションで型を指定する方法は？	type: String	kind: String	format: String	class: String	1
+Vue 3で推奨されるAPIスタイルは？	Options API	Composition API	Class API	Mixin API	2
+大規模アプリケーションでの状態管理に推奨されるのは？	localStorage	Vuex/Pinia	props drilling	global変数	2
+再利用可能なロジックを抽出する推奨パターンは？	Mixins	Composables	Global methods	Plugins	2
+コンポーネントの遅延読み込みを実現する関数は？	defineAsyncComponent()	loadComponent()	lazyComponent()	importComponent()	1
+パフォーマンス最適化でv-onceを使うべき場面は？	静的コンテンツ	動的コンテンツ	フォーム	リスト	1
+複数のwatcherを効率的に管理する方法は？	watchEffect()	watch()を複数	computed()	reactive()	1
+プロダクション環境で推奨されるビルドツールは？	Vite	Webpack	Parcel	Rollup	1
+型安全性を高めるために推奨される言語は？	JavaScript	TypeScript	CoffeeScript	Flow	2
+コンポーネントのネーミング規則として推奨されるのは？	PascalCase	camelCase	kebab-case	snake_case	1
+テンプレート内の複雑なロジックはどう扱うべきか？	computedに抽出	そのまま書く	methodsに抽出	watchに抽出	1
+リアクティビティのパフォーマンス最適化に使うのは？	shallowRef()	ref()	computed()	watch()	1
+環境変数にアクセスする正しい方法は？	import.meta.env	process.env	env.get()	config.env	1
+composableから複数の値を返す推奨方法は？	オブジェクトで返す	配列で返す	個別に返す	グローバル変数	1
+SFC内のスタイルをコンポーネント内に限定する属性は？	scoped	local	private	isolated	1
+大きなリストのレンダリング最適化に使うのは？	仮想スクロール	v-show	v-if	key属性	1
+不要なre-renderを防ぐために使う最適化手法は？	v-memo	v-cache	v-optimize	v-static	1
+propsの命名規則として推奨されるのは？	camelCase	PascalCase	kebab-case	snake_case	1
+emitイベントの命名規則として推奨されるのは？	kebab-case	camelCase	PascalCase	snake_case	1
+computedとmethodsの使い分けで正しいのは？	キャッシュが必要ならcomputed	常にcomputed	常にmethods	どちらでも同じ	1
+グローバルなエラーハンドリングに使う設定は？	app.config.errorHandler	app.onError()	app.catch()	app.handleError()	1
